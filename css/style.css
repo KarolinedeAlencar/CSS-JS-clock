@@ -1,18 +1,12 @@
-html {
-  background:#018DED url(http://unsplash.it/1500/1000?image=881&blur=50);
-  background-size:cover;
+body {
+  min-height: 100vh;
+  margin: 0;
+
   font-family:'helvetica neue';
   text-align: center;
   font-size: 10px;
-}
 
-body {
-  margin: 0;
-  font-size: 2rem;
-  display:flex;
-  flex:1;
-  min-height: 100vh;
-  align-items: center;
+  background-color: gray;
 }
 
 .clock {
@@ -43,4 +37,8 @@ body {
   background:black;
   position: absolute;
   top:50%;
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  transition: all .06s;
+  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
 }
